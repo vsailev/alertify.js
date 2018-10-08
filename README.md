@@ -1,7 +1,6 @@
 # Alertify.js
 
 [![Build Status](https://semaphoreci.com/api/v1/projects/c3e649b0-cd60-46bd-9a7a-3d23a7e55589/519553/badge.svg)](https://semaphoreci.com/alertifyjs/alertify-js)      
-[![Code Climate](https://img.shields.io/codeclimate/github/alertifyjs/alertify.js.svg?style=flat-square)](https://codeclimate.com/github/alertifyjs/alertify.js)
 [![Code Climate](https://img.shields.io/codeclimate/coverage/github/alertifyjs/alertify.js.svg?style=flat-square)](https://codeclimate.com/github/alertifyjs/alertify.js)
 [![Coverage Status](https://coveralls.io/repos/alertifyjs/alertify.js/badge.svg?branch=master&service=github)](https://coveralls.io/github/alertifyjs/alertify.js?branch=master)
 
@@ -10,7 +9,6 @@
 [![Stories in Ready](https://badge.waffle.io/alertifyjs/alertify.js.png?label=ready&title=Ready)](https://waffle.io/alertifyjs/alertify.js)
 
 [![Bower version](https://img.shields.io/bower/v/alertifyjs.svg?style=flat-square)](http://bower.io/search/?q=alertifyjs)
-[![Bower version](https://img.shields.io/bower/l/alertifyjs..svg?style=flat-square)](http://bower.io/search/?q=alertifyjs)
 [![npm downloads](https://img.shields.io/npm/dt/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 [![npm downloads](https://img.shields.io/npm/dm/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 [![npm version](https://img.shields.io/npm/v/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)

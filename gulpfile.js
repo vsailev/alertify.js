@@ -25,30 +25,30 @@ gulp.task("sass", function() {
       .pipe(gulp.dest(p("src/css")));
 });
 
-gulp.task("website:css", function() {
+gulp.task("docs:css", function() {
     return gulp
         .src([
             p("node_modules/material-design-lite/material.css"),
-            p("website/css/styles.css")
+            p("docs/css/styles.css")
         ])
         .pipe(concat("styles.min.css"))
         .pipe(autoprefixer())
         .pipe(minifyCSS())
-        .pipe(gulp.dest("website/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(connect.reload());
 });
 
-gulp.task("website:js", function() {
+gulp.task("docs:js", function() {
     return gulp
         .src([
             p("dist/js/alertify.js"),
             p("node_modules/material-design-lite/material.min.js"),
             p("node_modules/angular/angular.min.js"),
             p("dist/js/ngAlertify.js"),
-            p("website/js/demo.js")
+            p("docs/js/demo.js")
         ])
         .pipe(concat("all.js"))
-        .pipe(gulp.dest(p("website/js")))
+        .pipe(gulp.dest(p("docs/js")))
         .pipe(connect.reload());
 });
 
@@ -98,7 +98,7 @@ gulp.task("js:angular", function() {
 
 gulp.task("connect", function() {
     connect.server({
-        root: "website",
+        root: "docs",
         livereload: true,
         port: 3000
     });
@@ -121,9 +121,9 @@ gulp.task("test", ["lint:ci", "karma:ci"]);
 gulp.task("watch", function () {
 
     gulp.watch([
-        p("website/**/*.html")
+        p("docs/**/*.html")
     ], function() {
-        gulp.src(p("website/**/*.html")).pipe(connect.reload());
+        gulp.src(p("docs/**/*.html")).pipe(connect.reload());
     });
 
     gulp.watch([
@@ -132,17 +132,17 @@ gulp.task("watch", function () {
     ], ["build"]);
 
     gulp.watch([
-        p("dist/js/alertify.js"), p("dist/js/ngAlertify.js"), p("website/js/demo.js")
-    ], ["website:js"]);
+        p("dist/js/alertify.js"), p("dist/js/ngAlertify.js"), p("docs/js/demo.js")
+    ], ["docs:js"]);
 
     gulp.watch([
-        p("website/css/styles.css")
-    ]), ["website:css"];
+        p("docs/css/styles.css")
+    ]), ["docs:css"];
 
 });
 
 gulp.task("build", function(cb) {
-    runSequnce("sass", "css:min", "lint", "uglify", "js:angular", "website:js", "website:css", cb);
+    runSequnce("sass", "css:min", "lint", "uglify", "js:angular", "docs:js", "docs:css", cb);
 });
 
 gulp.task("default", ["connect", "karma:tdd", "watch"]);
