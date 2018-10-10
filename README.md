@@ -5,19 +5,20 @@
 [![Coverage Status](https://coveralls.io/repos/alertifyjs/alertify.js/badge.svg?branch=master&service=github)](https://coveralls.io/github/alertifyjs/alertify.js?branch=master)
 
 [![issues](https://img.shields.io/github/issues/alertifyjs/alertify.js.svg?style=flat-square)](https://github.com/alertifyjs/alertify.js/issues)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alertifyjs/alertify.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Stories in Ready](https://badge.waffle.io/alertifyjs/alertify.js.png?label=ready&title=Ready)](https://waffle.io/alertifyjs/alertify.js)
+[![Gitter](https://img.shields.io/gitter/room/alertifyjs/alertify.js.svg?style=flat-square)](https://gitter.im/alertifyjs/alertify.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Stories in Ready](https://img.shields.io/waffle/label/alertifyjs/alertify.js/ready.svg?style=flat-square)](https://waffle.io/alertifyjs/alertify.js)
 
 [![Bower version](https://img.shields.io/bower/v/alertifyjs.svg?style=flat-square)](http://bower.io/search/?q=alertifyjs)
+
 [![npm downloads](https://img.shields.io/npm/dt/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 [![npm downloads](https://img.shields.io/npm/dm/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 [![npm version](https://img.shields.io/npm/v/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 [![npm license](https://img.shields.io/npm/l/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 
-[![Dependency Status](https://david-dm.org/alertifyjs/alertify.js.svg)](https://david-dm.org/alertifyjs/alertify.js)
-[![Dev Dependency status](https://david-dm.org/alertifyjs/alertify.js/dev-status.svg)](https://david-dm.org/alertifyjs/alertify.js#info=devDependencies&view=table)
+[![Dependency Status](https://img.shields.io/david/alertifyjs/alertify.js.svg?style=flat-square)](https://david-dm.org/vsailev/alertify.js)
+[![Dev Dependency status](https://img.shields.io/david/dev/alertifyjs/alertify.js.svg?style=flat-square)](https://david-dm.org/vsailev/alertify.js?type=dev)
 
-# Alertify.js
+# Overview
 
 Alertify is an unobtrusive customizable JavaScript notification system.
 
