@@ -42,6 +42,7 @@
     "gulpfile.js",
     "package.json",
     "test",
+    "docs",
     "example",
     ".travis.yml",
     "Contributors.md"
