@@ -224,7 +224,7 @@ alertify
       // The click event is in the event variable, so you can use it here.
       ev.preventDefault();
 
-      // The value entered is availble in the val variable.
+      // The value entered is available in the val variable.
       alertify.success("You've clicked OK and typed: " + val);
 
     }, function(ev) {
@@ -353,7 +353,7 @@ alertify.confirm("Confirm?", function (ev) {
               <h5 class="mdl-typeography--headline">Code Example</h5>
               <pre>
 alertify.delay(1000); // This is just to make the demo go faster.
-alertify.log("Default botoom left position");
+alertify.log("Default bottom left position");
 setTimeout(function() {
     alertify.logPosition("top left");
     alertify.log("top left");
@@ -431,7 +431,7 @@ alertify.log(msg);
                 Keep in mind that the when setting a callback, clicking the log message
                 doesn't automatically close the log message, which is different than
                 previous functionality. This means that the callback could be called
-                multiple times if the user clicks multiple times. If you're callback is
+                multiple times if the user clicks multiple times. If your callback is
                 an action that must be completed only once, you'll need to keep track
                 of that separately.
               </p>
