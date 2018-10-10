@@ -91,9 +91,9 @@
                 }
 
                 html = (html + this.dialogs.buttons.holder + "</div>" + "</div>")
-                  .replace("{{buttons}}", btnTxt)
-                  .replace("{{ok}}", this.okLabel)
-                  .replace("{{cancel}}", this.cancelLabel);
+                    .replace("{{buttons}}", btnTxt)
+                    .replace("{{ok}}", this.okLabel)
+                    .replace("{{cancel}}", this.cancelLabel);
 
                 return html;
 

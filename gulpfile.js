@@ -19,10 +19,10 @@ var p = function (path) {
 
 gulp.task("sass", function() {
     return gulp
-      .src(p("src/sass/*.scss"))
-      .pipe(sass())
-      .pipe(autoprefixer("last 2 version", "> 1%", {cascade: true}))
-      .pipe(gulp.dest(p("src/css")));
+        .src(p("src/sass/*.scss"))
+        .pipe(sass())
+        .pipe(autoprefixer("last 2 version", "> 1%", {cascade: true}))
+        .pipe(gulp.dest(p("src/css")));
 });
 
 gulp.task("docs:css", function() {
@@ -54,33 +54,33 @@ gulp.task("docs:js", function() {
 
 gulp.task("css:min", function () {
     return gulp
-      .src(p("src/css/**/*.css"))
-      .pipe(minifyCSS())
-      .pipe(size({ gzip: true, showFiles: true }))
-      .pipe(gulp.dest(p("dist/css")))
-      .pipe(connect.reload());
+        .src(p("src/css/**/*.css"))
+        .pipe(minifyCSS())
+        .pipe(size({ gzip: true, showFiles: true }))
+        .pipe(gulp.dest(p("dist/css")))
+        .pipe(connect.reload());
 });
 
 gulp.task("lint", function() {
     return gulp
-      .src(p("src/js/**/*.js"))
-      .pipe(eslint())
-      .pipe(eslint.format());
+        .src(p("src/js/**/*.js"))
+        .pipe(eslint())
+        .pipe(eslint.format());
 });
 
 gulp.task("lint:ci", function() {
     return gulp
-      .src(p("src/js/**/*.js"))
-      .pipe(eslint())
-      .pipe(eslint.format())
-      .pipe(eslint.failOnError());
+        .src(p("src/js/**/*.js"))
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failOnError());
 });
 
 gulp.task("uglify", function () {
     return gulp
         .src(p("src/js/alertify.js"))
         .pipe(insert({"/* style.css */": "dist/css/alertify.css"}))
-        .pipe(uglify({ outSourceMap: false }))
+        .pipe(uglify())
         .pipe(size({ gzip: true, showFiles: true }))
         .pipe(gulp.dest(p("dist/js")))
         .pipe(connect.reload());
@@ -91,7 +91,7 @@ gulp.task("js:angular", function() {
         .src(p("src/js/ngAlertify.js"))
         .pipe(insert({"/* alertify.js */": "src/js/alertify.js"}))
         .pipe(insert({"/* style.css */": "dist/css/alertify.css"}))
-        .pipe(uglify({ outSourceMap: false }))
+        .pipe(uglify())
         .pipe(size({ gzip: true, showFiles: true }))
         .pipe(gulp.dest(p("dist/js")));
 });
