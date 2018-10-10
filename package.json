@@ -58,7 +58,7 @@
     "gulp-file-insert": "^2.0.0",
     "gulp-prefix": "0.0.15",
     "gulp-protractor": "^4.1.0",
-    "gulp-qunit": "^1.2.1",
+    "gulp-qunit": "^2.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.1",
