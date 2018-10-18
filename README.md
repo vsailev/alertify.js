@@ -15,8 +15,8 @@
 [![npm version](https://img.shields.io/npm/v/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 [![npm license](https://img.shields.io/npm/l/alertify.js.svg?style=flat-square)](https://www.npmjs.com/package/alertify.js)
 
-[![Dependency Status](https://img.shields.io/david/alertifyjs/alertify.js.svg?style=flat-square)](https://david-dm.org/vsailev/alertify.js)
-[![Dev Dependency status](https://img.shields.io/david/dev/alertifyjs/alertify.js.svg?style=flat-square)](https://david-dm.org/vsailev/alertify.js?type=dev)
+[![Dependency Status](https://img.shields.io/david/alertifyjs/alertify.js.svg?style=flat-square)](https://david-dm.org/yxuko/alertify.js)
+[![Dev Dependency status](https://img.shields.io/david/dev/alertifyjs/alertify.js.svg?style=flat-square)](https://david-dm.org/yxuko/alertify.js?type=dev)
 
 # Overview
 

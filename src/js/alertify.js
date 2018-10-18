@@ -31,7 +31,6 @@
          * @type {Object}
          */
         var _alertify = {
-
             parent: document.body,
             version: "1.0.11",
             defaultOkLabel: "Ok",
